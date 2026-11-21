@@ -5,14 +5,26 @@ cleaning company based in Dutchess County, New York.
 
 Live site (GitHub Pages): https://asifiqbalgads.github.io/gabilancleaningcorp.com/
 
-## Overview
+## Brand Assets (Original)
 
-- **Business:** Gabilan Cleaning Corp — janitorial &amp; facility services for all industries
-- **Location:** Dutchess County, NY (Poughkeepsie area)
-- **Phone:** (845) 721-6619
-- **Email:** gabriel@gabilancleaningcorp.com
-- **Services:** Janitorial · Window · Carpet · Hard Floor · Construction · Exterior Building Cleaning
-- **Social:** [Instagram](https://www.instagram.com/gabilan.cleaning.corp/) · [Facebook](https://www.facebook.com/gabilancleaningcorp/)
+- **Logo:** `assets/logo/gabilan-logo-original.jpg` — the exact logo used on the live site
+  (blue swirl + sun + wordmark on its native gray background). No replacement logo was created.
+- **Brand colors (sampled from the original logo file):**
+  - Royal blue **#2230C4** — primary / hero background
+  - Sun yellow **#F8D749** — accent / CTA
+  - Logo native gray **#A0A0A0** — logo tile background
+  - Darker shades of the brand blue (#1B26A0, #141B6E) are used for depth in dark sections.
+- **Photography:** real photos from the live site (fleet vehicles, team at work — janitorial,
+  window, carpet, construction, exterior cleaning), mirrored locally under `assets/images/`.
+
+## Design
+
+- Clean, structured, service-industry professional — not fashion/editorial.
+- **Typography:** Barlow Condensed (headings, fleet-livery style) + Inter (body).
+- Blue hero with yellow border rule, real fleet photo, call-first CTAs, trust values bar,
+  photo service grid, 4-step process, FAQ accordion, contact + quote form.
+- Fully responsive (mobile-first), sticky call bar on phones, accessible FAQ/nav (ARIA,
+  keyboard-friendly), `prefers-reduced-motion` respected.
 
 ## Project Structure
 
@@ -21,32 +33,26 @@ Live site (GitHub Pages): https://asifiqbalgads.github.io/gabilancleaningcorp.co
 ├── css/style.css       # Design system & responsive styles (mobile-first)
 ├── js/script.js        # Mobile nav, FAQ accordion, quote-form mailto, footer year
 ├── assets/
-│   ├── images/         # Photography (AI-generated conceptual visuals)
-│   ├── logo/           # Gabilan Cleaning Corp SVG logo & mark
+│   ├── images/         # Real photos from the live site (optimized JPEG)
+│   └── logo/           # Original Gabilan Cleaning Corp logo (unchanged)
 ├── .nojekyll           # Serve static files as-is on GitHub Pages
 └── README.md
 ```
-
-## Design Direction
-
-- **Palette:** Deep spruce green `#0e3527`, warm ivory `#f5f1e6`, brushed brass `#c9a452`
-- **Typography:** Fraunces (editorial serif display) + Inter (body)
-- **Style:** Editorial, industry-specific — arch-framed hero, rotating badge, numbered
-  service grid, full-bleed service-area band. No generic template patterns.
 
 ## Notes
 
 - `<meta name="robots" content="noindex, nofollow">` is set so this concept does not compete
   with the business's existing Squarespace site in search results. Remove it before any
   production launch.
+- The exact hero/background CSS hex of the live Squarespace site could not be retrieved
+  (Stylesheet not publicly accessible from the build sandbox); the hero therefore uses the
+  exact brand blue sampled from the original logo file (#2230C4).
 - The contact form has **no backend**; submitting opens the visitor's email client via a
   `mailto:` link addressed to `gabriel@gabilancleaningcorp.com`. No fake success messages
   are shown. For true form handling, connect a service such as Formspree or Basin.
-- Business facts (services, contact details, values) are taken from the public
-  gabilancleaningcorp.com site. Photography in `assets/images/` is AI-generated conceptual
-  imagery, not actual customer job photos.
-- Original Squarespace CDN images could not be re-hosted here, so optimized local assets
-  were created instead.
+- Live-site photos were re-fetched via the public image index and optimized locally because
+  direct CDN download is blocked from the build environment. Hard Floor Cleaning has no
+  public photo available, so it ships as an icon card.
 
 ## Deployment (GitHub Pages)
 

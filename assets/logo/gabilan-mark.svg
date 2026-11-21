@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gabilan Cleaning Corp logo">
-  <circle cx="32" cy="32" r="31" fill="#0e3527"/>
-  <circle cx="32" cy="32" r="27.5" fill="none" stroke="#c9a452" stroke-width="1.4" opacity="0.9"/>
-  <path d="M12 40 L24.5 21.5 L32 33 L38.5 22.5 L52 40 Z" fill="#f5f1e6"/>
-  <path d="M12 40 L52 40 L52 43.5 L12 43.5 Z" fill="#c9a452" opacity="0.35"/>
-  <path d="M46 12.5 l1.55 3.35 3.35 1.55 -3.35 1.55 -1.55 3.35 -1.55 -3.35 -3.35 -1.55 3.35 -1.55 Z" fill="#c9a452"/>
-</svg>
